@@ -24,6 +24,9 @@ module.exports = {
         'comma-dangle': 'off',
         'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
         'react/jsx-indent': [1, 4],
-        'import/no-unresolved': 'off'
+        'import/no-unresolved': 'off',
+        'object-curly-newline': 'off',
+        'arrow-body-style': 'warn',
+        'react/jsx-indent-props': 'off'
     }
 };

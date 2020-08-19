@@ -20,32 +20,47 @@ const Nav = styled.nav`
         justify-content: space-between;
     }
 
-    img {
-        margin-top: 8px;
-    }
-
-    input {
-        height: 28px;
-    }
-
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 0 2rem;
-    }
-
     @media screen and (max-width: 44rem) {
         position: fixed;
         bottom: 0;
-
-        ul {
-        }
     }
 
     @media screen and (min-width: 44rem) {
     }
 `;
 
-export default Nav;
+const Logo = styled.img`
+    margin-top: 8px;
+    padding: 0 2rem;
+
+    @media screen and (max-width: 44rem) {
+        display: none;
+    }
+`;
+
+const SearchBar = styled.input`
+    height: 28px;
+    @media screen and (max-width: 44rem) {
+        display: none;
+    }
+`;
+
+const NavItems = styled.ul`
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 2rem;
+
+    li {
+        margin-top: 8px;
+        margin-left: 1rem;
+    }
+
+    @media screen and (max-width: 44rem) {
+        width: 100%;
+        justify-content: space-around;
+    }
+`;
+
+export { Nav as default, Logo, SearchBar, NavItems };
